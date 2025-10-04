@@ -9,7 +9,7 @@ function OrdersPage({ cart, loadCart }) {
 
     useEffect(() => {
         const getOrders = async () => {
-            const response = await axios.get('/api/orders?expand=products')
+            const response = await axios.get('https://react-full-course.onrender.com/api/orders?expand=products')
             setOrders(response.data)
         }
         getOrders();

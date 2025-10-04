@@ -6,7 +6,7 @@ import './OrdersPage.css'
 
 export function OrderDetailsGrid({ order, loadCart }) {
     const addToCart = async(orderProduct)=>{
-        await axios.post('/api/cart-items',{
+        await axios.post('https://react-full-course.onrender.com/api/cart-items',{
             productId: orderProduct.product.id,
             quantity: 1
         })

@@ -13,7 +13,7 @@ export function ProductsGrid({ product, loadCart }) {
         setTimeout(()=>{
             setIsAdded(false);
         },2000);
-        await axios.post('/api/cart-items', {
+        await axios.post('https://react-full-course.onrender.com/api/cart-items', {
             productId: product.id,
             quantity
         })

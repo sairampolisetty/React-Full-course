@@ -5,7 +5,7 @@ import axios from 'axios'
 export function DeliveryOptions({deliveryOptions, cartItem,loadCart}) {
 
     const changeDeliveryOption = async(deliveryOption) => {
-        await axios.put(`/api/cart-items/${cartItem.productId}`, {
+        await axios.put(`https://react-full-course.onrender.com/api/cart-items/${cartItem.productId}`, {
             deliveryOptionId: deliveryOption.id
         })
         await loadCart();

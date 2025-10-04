@@ -5,7 +5,7 @@ import {formatMoney} from '../../utils/money'
 export function PaymentSummary({paymentSummary,loadCart}) {
     const navigate = useNavigate();
     const createOrder = async()=>{
-        await axios.post('/api/orders')
+        await axios.post('https://react-full-course.onrender.com/api/orders')
         await loadCart();
         navigate('/orders');
     }
