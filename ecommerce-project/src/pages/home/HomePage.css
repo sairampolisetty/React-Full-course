@@ -61,9 +61,10 @@
 
 @media (max-width: 450px) {
   .home-page .products-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
 
 .home-page .product-container {
   padding-top: 40px;
